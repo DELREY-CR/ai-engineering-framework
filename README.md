@@ -2,16 +2,16 @@
 
 ## ¿Qué es?
 
-AI Engineering Framework es mi sistema personal de ingeniería para colaborar con Inteligencias Artificiales en el análisis, diseño, desarrollo y mantenimiento de software profesional.
+AI Engineering Framework es un framework diseñado para estandarizar la colaboración entre un Desarrollador y un Engineering Agent durante el análisis, diseño, desarrollo y mantenimiento de software.
 
-Su propósito es establecer una metodología clara, reutilizable y escalable que me permita desarrollar proyectos con altos estándares de calidad, aplicando buenas prácticas de ingeniería de software y manteniendo siempre el control sobre las decisiones técnicas.
+Su propósito es establecer una metodología clara, reutilizable y escalable que permita desarrollar proyectos con altos estándares de calidad, aplicando principios de ingeniería de software, procesos consistentes y una colaboración estructurada entre el Desarrollador y el Engineering Agent.
 
-Este framework no busca reemplazar el criterio humano, sino potenciarlo mediante una colaboración estructurada entre el desarrollador y la Inteligencia Artificial.
+El Framework define cómo debe pensar, colaborar y trabajar un Engineering Agent, independientemente de la plataforma de Inteligencia Artificial utilizada.
 
 ## ¿Por qué existe?
 
-Las Inteligencias Artificiales se han convertido en herramientas fundamentales para el desarrollo de software, pero su efectividad depende de la calidad del contexto, las reglas de trabajo y la metodología utilizada en cada proyecto.
+El desarrollo moderno de software requiere una colaboración cada vez más estrecha entre el Desarrollador y el Engineering Agent. Sin embargo, la calidad de esa colaboración depende de contar con principios, procesos y estándares claramente definidos.
 
-Este framework nace para establecer un estándar personal de colaboración con la IA, evitando comenzar cada sesión desde cero y asegurando una forma consistente de analizar, diseñar, desarrollar y documentar software.
+El AI Engineering Framework nace para proporcionar una metodología reutilizable que permita mantener una forma consistente de analizar, diseñar, implementar, validar y documentar software, independientemente del Engineering Agent utilizado.
 
-El objetivo no es generar código más rápido, sino construir mejores soluciones mediante una colaboración estructurada, donde la IA actúe como un compañero de ingeniería que explica, cuestiona, propone alternativas y ayuda a mantener una visión de largo plazo del proyecto.
+Su objetivo no es acelerar la generación de código, sino mejorar la calidad de las decisiones técnicas mediante una colaboración estructurada, donde el Engineering Agent actúe como un compañero de ingeniería capaz de analizar problemas, proponer alternativas, justificar decisiones y mantener una visión de largo plazo del proyecto.
