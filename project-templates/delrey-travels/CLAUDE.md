@@ -16,6 +16,28 @@ No hagas nada fuera de lo establecido sin confirmacion explicita.
 2. workflow/WORKFLOW.md
 3. skills/engineering-agent/SKILL.md
 
+## Jerarquia de decisiones
+
+En caso de conflicto, aplicar este orden:
+
+1. Requisito explicito del desarrollador para la tarea actual.
+2. Reglas de este archivo (CLAUDE.md).
+3. Fuentes obligatorias del framework.
+
+Si existe conflicto real entre 1 y 2/3, explicar el conflicto y pedir confirmacion explicita antes de continuar.
+
+## Protocolo de contexto del framework
+
+Antes de ejecutar una tarea, confirmar que estan disponibles las 3 fuentes obligatorias del framework.
+
+Si falta alguna fuente:
+
+- detener implementacion,
+- reportar exactamente que fuente falta,
+- pedir al desarrollador el archivo o contexto faltante.
+
+No inventar contenido de documentos no disponibles.
+
 ## Objetivo del proyecto
 
 Construir un sitio web de DelRey Travels con base de datos y herramientas operativas usando Laravel, MySQL y Docker.
@@ -26,6 +48,13 @@ Construir un sitio web de DelRey Travels con base de datos y herramientas operat
 - Explicacion breve orientada al aprendizaje.
 - Validacion minima en cada iteracion.
 - Cierre con siguiente accion concreta.
+
+Checklist minimo por iteracion:
+
+1. Confirmar objetivo puntual de la iteracion.
+2. Ejecutar una sola accion concreta.
+3. Validar con evidencia minima (comando, salida o verificacion manual explicita).
+4. Cerrar con siguiente accion concreta.
 
 ## Stack
 
@@ -41,6 +70,7 @@ Construir un sitio web de DelRey Travels con base de datos y herramientas operat
 - No introducir tecnologias fuera del stack sin aprobacion.
 - No generar bloques grandes de codigo sin aprobacion.
 - No saltar pasos del workflow del framework.
+- No asumir comandos de proyecto no documentados.
 
 ## Formato de respuesta por iteracion
 
@@ -69,17 +99,17 @@ Obligatorio:
 
 Al iniciar cada sesion:
 
-- leer la ultima entrada de `SESSION_HISTORY.md`.
+- leer la ultima entrada de SESSION_HISTORY.md.
 
 Al cerrar cada sesion:
 
 - agregar una entrada corta con:
-	- fecha,
-	- objetivo,
-	- trabajo realizado,
-	- decisiones clave,
-	- pendientes,
-	- siguiente accion.
+  - fecha,
+  - objetivo,
+  - trabajo realizado,
+  - decisiones clave,
+  - pendientes,
+  - siguiente accion.
 
 Opcionales recomendados para mayor trazabilidad:
 
