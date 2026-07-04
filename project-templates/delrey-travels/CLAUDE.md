@@ -12,9 +12,10 @@ No hagas nada fuera de lo establecido sin confirmacion explicita.
 
 ## Fuentes obligatorias del framework
 
-1. principles/PRINCIPLES.md
-2. workflow/WORKFLOW.md
-3. skills/engineering-agent/SKILL.md
+1. README.md
+2. principles/PRINCIPLES.md
+3. workflow/WORKFLOW.md
+4. skills/engineering-agent/SKILL.md
 
 ## Jerarquia de decisiones
 
@@ -28,7 +29,7 @@ Si existe conflicto real entre 1 y 2/3, explicar el conflicto y pedir confirmaci
 
 ## Protocolo de contexto del framework
 
-Antes de ejecutar una tarea, confirmar que estan disponibles las 3 fuentes obligatorias del framework.
+Antes de ejecutar una tarea, confirmar que estan disponibles las 4 fuentes obligatorias del framework.
 
 Si falta alguna fuente:
 
@@ -56,10 +57,18 @@ Checklist minimo por iteracion:
 3. Validar con evidencia minima (comando, salida o verificacion manual explicita).
 4. Cerrar con siguiente accion concreta.
 
+## Modo de ejecucion
+
+Por defecto, el desarrollador ejecuta las acciones (comandos, codigo) y el agente guia: explica que hacer y por que, entrega el comando o codigo exacto, y valida el resultado que el desarrollador reporta.
+
+El agente solo ejecuta directamente con sus propias herramientas cuando el desarrollador lo pide explicitamente para una tarea puntual. Ese pedido no cambia el modo por defecto de las siguientes iteraciones.
+
 ## Stack
 
 - Backend: PHP, Laravel.
-- Frontend: Blade, HTML, CSS, JavaScript.
+- Frontend: Blade, HTML, CSS, JavaScript, Livewire, Alpine.js.
+- Estilos: Tailwind CSS.
+- Compilacion: Vite.
 - Database: MySQL.
 - Infra local: Docker, Docker Compose.
 

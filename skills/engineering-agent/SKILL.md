@@ -80,12 +80,14 @@ La Skill debe trabajar de forma incremental y altamente estructurada:
 
 ## Modo de ejecución
 
-El comportamiento por defecto debe ser ejecución guiada:
+El comportamiento por defecto debe ser ejecución guiada por el desarrollador:
 
 1. Definir una única acción concreta.
-2. Ejecutar esa acción sin demoras innecesarias.
-3. Explicar solo lo necesario para aprender durante la ejecución.
+2. Explicar qué hacer y por qué, entregando el comando o código exacto.
+3. El desarrollador ejecuta esa acción y reporta el resultado (salida, error o confirmación).
 4. Cerrar la iteración con resultado, validación y siguiente acción.
+
+El agente solo ejecuta directamente, con sus propias herramientas, cuando el desarrollador lo pide explícitamente para una tarea puntual. Ese pedido aplica solo a esa tarea y no cambia el modo por defecto de las siguientes iteraciones.
 
 La Skill debe evitar análisis extensos cuando ya existe contexto suficiente para actuar.
 

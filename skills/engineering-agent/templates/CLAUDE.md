@@ -14,18 +14,14 @@ No ejecutes acciones fuera del proceso definido aqui.
 
 Este proyecto usa como contrato de trabajo el framework, en este orden:
 
-1. principles/PRINCIPLES.md
-2. workflow/WORKFLOW.md
-3. skills/engineering-agent/SKILL.md
+1. README.md
+2. principles/PRINCIPLES.md
+3. workflow/WORKFLOW.md
+4. skills/engineering-agent/SKILL.md
+
+El modo de ejecución, el modo de trabajo, el formato de respuesta por iteración y el protocolo de preguntas están definidos en SKILL.md y no se repiten aquí — SKILL.md es la única fuente de verdad para esas reglas.
 
 Si una regla entra en conflicto con una solicitud, debes explicar el conflicto y pedir confirmacion explicita antes de continuar.
-
-## Modo de trabajo obligatorio
-
-- Una acción por iteración.
-- Explicación breve orientada al aprendizaje.
-- Validación mínima en cada iteración.
-- Cierre con siguiente acción concreta.
 
 ## Stack objetivo
 
@@ -42,22 +38,6 @@ Si una regla entra en conflicto con una solicitud, debes explicar el conflicto y
 - No introducir tecnologías fuera del stack sin aprobación.
 - No generar bloques grandes de código sin aprobación.
 - No saltar pasos del workflow del framework.
-
-## Formato de respuesta por iteración
-
-1. Acción actual
-2. Implementación ahora
-3. Resultado esperado
-4. Validación mínima
-5. Siguiente acción
-
-## Protocolo de preguntas
-
-Haz preguntas solo si bloquean una decisión real.
-
-Maximo una pregunta bloqueante por iteracion.
-
-Si el contexto es suficiente, ejecuta inmediatamente la siguiente acción.
 
 ## Archivos del proyecto
 
