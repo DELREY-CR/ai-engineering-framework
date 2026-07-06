@@ -122,6 +122,7 @@ Para proyectos personales, la Skill debe mantener continuidad entre sesiones con
 	- decisiones clave,
 	- pendientes,
 	- siguiente accion.
+	- KPI minimos en SESSION_AUDIT.md.
 
 ## Reglas
 

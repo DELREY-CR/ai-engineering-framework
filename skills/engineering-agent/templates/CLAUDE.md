@@ -45,6 +45,7 @@ Obligatorio:
 
 - CLAUDE.md
 - SESSION_HISTORY.md
+- SESSION_AUDIT.md
 
 ## Modo continuidad
 
@@ -61,6 +62,7 @@ Al cerrar cada sesion:
 	- decisiones clave,
 	- pendientes,
 	- siguiente accion.
+- actualizar `SESSION_AUDIT.md` con KPI minimos de la sesion.
 
 Opcionales recomendados:
 

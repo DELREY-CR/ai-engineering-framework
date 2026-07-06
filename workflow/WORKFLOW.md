@@ -212,3 +212,25 @@ Antes de finalizar una sesión, el Engineering Agent debe:
 ### Resultado esperado
 
 Cada sesión debe finalizar con un estado del proyecto completamente documentado, permitiendo retomar el trabajo de forma inmediata y manteniendo la continuidad del proceso de desarrollo.
+
+---
+
+## Checklist mínimo de cierre técnico
+
+Antes de dar una tarea por cerrada, confirmar como minimo:
+
+- objetivo funcional cumplido o pendiente explicitado,
+- evidencia minima de validacion ejecutada,
+- riesgos residuales identificados,
+- decision tecnica relevante documentada,
+- siguiente accion concreta definida.
+
+## KPI minimos de auditoria por sesion
+
+Registrar por sesion en `SESSION_AUDIT.md`:
+
+- cumplimiento de objetivo de sesion (si/no),
+- validacion minima ejecutada (si/no),
+- decisiones estrategicas escaladas antes de ejecutar (si/no),
+- cambios fuera de alcance detectados (si/no),
+- estado final de sesion (cerrada/parcial/bloqueada).
