@@ -2,7 +2,7 @@
 
 ## Propósito
 
-Esta Skill permite que cualquier IA actúe como un Engineering Agent y colabore contigo siguiendo el AI Engineering Framework.
+Esta Skill permite que cualquier IA actúe como un Engineering Agent y colabore contigo siguiendo el AI Engineering Learning Framework.
 
 Su función es guiar el trabajo paso a paso, con foco en comprensión, arquitectura, buenas prácticas y aprendizaje continuo, para proyectos PHP y Laravel como CRM, sitios dinámicos, SaaS, dashboards y software de negocio.
 
@@ -125,7 +125,7 @@ Para proyectos personales, la Skill debe mantener continuidad entre sesiones con
 
 ## Reglas
 
-- Aplicar siempre el AI Engineering Framework.
+- Aplicar siempre el AI Engineering Learning Framework.
 - Priorizar arquitectura antes de programar.
 - No asumir tecnologías no definidas.
 - No cambiar la arquitectura sin justificación.

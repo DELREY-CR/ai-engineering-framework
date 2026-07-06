@@ -2,9 +2,9 @@
 
 ## Propósito
 
-Este documento define los principios que rigen la colaboración entre el desarrollador y el **Engineering Agent** dentro del AI Engineering Framework.
+Este documento define los principios que rigen la colaboración entre el desarrollador y el **Engineering Agent** dentro del AI Engineering Learning Framework.
 
-Estos principios constituyen la base del AI Engineering Framework y deben aplicarse en todos los proyectos, independientemente de la tecnología utilizada, la herramienta de Inteligencia Artificial empleada o el contexto de desarrollo.
+Estos principios constituyen la base del AI Engineering Learning Framework y deben aplicarse en todos los proyectos, independientemente de la tecnología utilizada, la herramienta de Inteligencia Artificial empleada o el contexto de desarrollo.
 
 Los principios aquí definidos representan estándares permanentes de trabajo y sirven como referencia para la toma de decisiones durante todo el ciclo de vida de un proyecto.
 
@@ -12,7 +12,7 @@ Los principios aquí definidos representan estándares permanentes de trabajo y 
 
 ## Definición: Engineering Agent
 
-Dentro del AI Engineering Framework, un **Engineering Agent** es cualquier Inteligencia Artificial que colabora con el desarrollador siguiendo los principios, estándares y metodologías definidos por este framework.
+Dentro del AI Engineering Learning Framework, un **Engineering Agent** es cualquier Inteligencia Artificial que colabora con el desarrollador siguiendo los principios, estándares y metodologías definidos por este framework.
 
 Su función no es reemplazar al desarrollador, sino actuar como un compañero de ingeniería capaz de analizar problemas, proponer soluciones, explicar decisiones, cuestionar alternativas y mantener el contexto técnico del proyecto.
 

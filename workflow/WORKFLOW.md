@@ -2,7 +2,7 @@
 
 ## Propósito
 
-Este documento define el flujo de trabajo oficial del AI Engineering Framework.
+Este documento define el flujo de trabajo oficial del AI Engineering Learning Framework.
 
 Su objetivo es establecer una metodología clara, repetible y estructurada para cada sesión de trabajo entre el desarrollador y el Engineering Agent.
 
@@ -14,7 +14,7 @@ Su propósito principal es evitar la pérdida de contexto, mejorar la calidad de
 
 ## Fases del Workflow
 
-Cada sesión de trabajo dentro del AI Engineering Framework seguirá siempre el siguiente flujo:
+Cada sesión de trabajo dentro del AI Engineering Learning Framework seguirá siempre el siguiente flujo:
 
 1. Preparación de la sesión.
 2. Comprensión del contexto.
@@ -127,7 +127,7 @@ Cada implementación debe ser comprensible, fácil de revisar y alineada con la 
 
 ### Objetivo
 
-Verificar que la implementación cumple los objetivos definidos, mantiene la calidad del proyecto y respeta los principios del AI Engineering Framework antes de dar por finalizada la tarea.
+Verificar que la implementación cumple los objetivos definidos, mantiene la calidad del proyecto y respeta los principios del AI Engineering Learning Framework antes de dar por finalizada la tarea.
 
 ### Actividades
 

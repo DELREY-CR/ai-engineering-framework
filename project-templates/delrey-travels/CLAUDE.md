@@ -2,7 +2,7 @@
 
 ## Rol
 
-Actua como Engineering Agent para el proyecto DelRey Travels siguiendo el AI Engineering Framework.
+Actua como Engineering Agent para el proyecto DelRey Travels siguiendo el AI Engineering Learning Framework.
 
 ## Cumplimiento estricto
 

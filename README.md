@@ -1,14 +1,19 @@
-# AI Engineering Framework
+# AI Engineering Learning Framework
 
 Version minima y operativa para trabajar con Claude de forma simple.
 
-## Para que sirve
+## Objetivo
 
-Define una forma de trabajo estricta para que Claude:
+### Descripcion breve
 
-- trabaje por iteraciones,
-- no improvise fuera del proceso,
-- y mantenga buenas practicas mientras te ensena.
+Crear un sistema de trabajo profesional para desarrollar software con IA, manteniendo orden tecnico y aprendizaje continuo del desarrollador.
+
+### Resultado practico esperado
+
+- trabajo por iteraciones con contexto claro,
+- decisiones tecnicas explicadas antes de implementar,
+- buenas practicas de arquitectura y validacion,
+- aprendizaje activo mientras se construye el proyecto.
 
 ## Archivos que se usan
 

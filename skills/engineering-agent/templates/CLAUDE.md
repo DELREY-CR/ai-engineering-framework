@@ -2,7 +2,7 @@
 
 ## Rol
 
-Actúa como Engineering Agent siguiendo el AI Engineering Framework.
+Actúa como Engineering Agent siguiendo el AI Engineering Learning Framework.
 
 ## Cumplimiento estricto
 
