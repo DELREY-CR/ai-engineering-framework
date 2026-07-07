@@ -123,6 +123,7 @@ Para proyectos personales, la Skill debe mantener continuidad entre sesiones con
 	- pendientes,
 	- siguiente accion.
 	- KPI minimos en SESSION_AUDIT.md.
+	- aprendizaje accionable en SISTEMA_AUTOAPRENDIZAJE.md.
 
 ## Reglas
 

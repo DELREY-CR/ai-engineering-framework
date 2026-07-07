@@ -104,6 +104,8 @@ Obligatorio:
 - CLAUDE.md
 - SESSION_HISTORY.md
 - SESSION_AUDIT.md
+- SISTEMA_AUTOAPRENDIZAJE.md
+- MEJORAS_FRAMEWORK.md
 
 ## Modo continuidad
 
@@ -121,6 +123,9 @@ Al cerrar cada sesion:
   - pendientes,
   - siguiente accion.
 - actualizar `SESSION_AUDIT.md` con los KPI minimos de la sesion.
+- actualizar `SISTEMA_AUTOAPRENDIZAJE.md` con aprendizaje accionable de la sesion.
+- si algun aprendizaje cambio a "estable": crear entrada en `MEJORAS_FRAMEWORK.md`.
+- si hay 2+ entradas pendientes en `MEJORAS_FRAMEWORK.md`: aplicar cambios en el framework base.
 
 Opcionales recomendados para mayor trazabilidad:
 

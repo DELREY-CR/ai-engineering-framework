@@ -46,6 +46,7 @@ Obligatorio:
 - CLAUDE.md
 - SESSION_HISTORY.md
 - SESSION_AUDIT.md
+- SISTEMA_AUTOAPRENDIZAJE.md
 
 ## Modo continuidad
 
@@ -63,6 +64,7 @@ Al cerrar cada sesion:
 	- pendientes,
 	- siguiente accion.
 - actualizar `SESSION_AUDIT.md` con KPI minimos de la sesion.
+- actualizar `SISTEMA_AUTOAPRENDIZAJE.md` con aprendizaje accionable de la sesion.
 
 Opcionales recomendados:
 

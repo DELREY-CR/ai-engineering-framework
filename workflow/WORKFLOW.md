@@ -234,3 +234,28 @@ Registrar por sesion en `SESSION_AUDIT.md`:
 - decisiones estrategicas escaladas antes de ejecutar (si/no),
 - cambios fuera de alcance detectados (si/no),
 - estado final de sesion (cerrada/parcial/bloqueada).
+
+## Ciclo de autoaprendizaje de dos niveles
+
+### Al abrir sesion
+
+1. Leer entradas anteriores en `SISTEMA_AUTOAPRENDIZAJE.md`.
+2. Detectar si el problema actual es RECURRENTE (aparece en 2+ sesiones previas).
+3. Si es RECURRENTE: darle prioridad maxima automaticamente.
+
+### Al cerrar sesion
+
+1. Registrar TOP 3 en `SISTEMA_AUTOAPRENDIZAJE.md` usando la formula de prioridad.
+2. Verificar si algun aprendizaje cambio a estado "estable".
+3. Si cambio a "estable": crear entrada en `MEJORAS_FRAMEWORK.md` con el documento del framework a actualizar.
+
+### Ciclo de revision de MEJORAS_FRAMEWORK.md
+
+Activar cuando:
+
+- se completen 5 sesiones del proyecto, o
+- existan 2 o mas entradas pendientes en `MEJORAS_FRAMEWORK.md`.
+
+Al revisar: aplicar cambios en los archivos del framework base y marcar la entrada como "aplicada".
+
+Regla de poda: eliminar entradas sin actividad en 10 sesiones.
