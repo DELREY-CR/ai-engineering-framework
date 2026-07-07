@@ -13,6 +13,8 @@ Cualquier proyecto del stack objetivo (Laravel + MySQL + Docker local) que se de
 - Confirmar si hay SSH disponible (cPanel → "Acceso a SSH") o solo FTP/File Manager. El método de despliegue cambia completamente según esto.
 - Si hay SSH pero el agente no tiene credenciales: generar un par de llaves SSH temporal (el agente lo genera localmente, nunca pedir al desarrollador que comparta contraseñas por chat), pedir al desarrollador que importe la llave **pública** en cPanel → "Administrar claves SSH" → "Importar clave", y que la **autorice** (importar y autorizar son dos pasos separados; sin el segundo la conexión falla con `Permission denied (publickey)`). Revocar la llave al finalizar el despliegue.
 - Si `ssh -i llave usuario@host comando` falla con `Too many authentication failures`, agregar `-o IdentitiesOnly=yes` (evita que el cliente ofrezca otras llaves antes que la indicada).
+- **Si no se tiene a mano el host/puerto de conexión** (ni el desarrollador lo recuerda ni queda documentado): pedirle que abra **"Terminal"** en el buscador de cPanel (consola web, no necesita SSH externo) y corra `hostname -f`, `whoami`, `curl -s ifconfig.me`. Da host, usuario e IP suficientes para armar el comando SSH externo sin tener que navegar buscando la sección "SSH Access" del panel.
+- **Si el repo del proyecto es público en GitHub** (verificar con `curl -s https://api.github.com/repos/<owner>/<repo> | grep '"private"'`), no guardar host/IP/usuario reales en ningún archivo versionado — dejarlos en un archivo local listado en `.gitignore` (ver patrón en `docs/HOSTGATOR-LOCAL.md` de DelRey Travels). El nombre de host o usuario por sí solo no compromete la cuenta (sigue haciendo falta la llave privada), pero no hay razón para publicarlo.
 - Confirmar el entorno real del servidor conectándose y corriendo: `php -v`, `composer --version`, `git --version`, `which node npm`, `which uapi`.
 - **Gotcha importante**: herramientas como Composer a veces solo están en el `PATH` de un shell de login completo, no en el shell no interactivo que usa `ssh host "comando"`. Si algo da "command not found" por SSH pero funciona en la Terminal interactiva de cPanel, probar envolviendo el comando en `bash -lc "..."`.
 
@@ -79,6 +81,27 @@ Y un `scripts/hostgator-preflight.sh` que valide antes de abrir el sitio: existe
 - Ante cualquier 500, revisar `storage/logs/laravel.log` en el servidor antes de especular.
 - **Gotcha conocido**: vistas Blade que emiten XML/texto con una declaración literal `<?xml version="1.0"...?>` como primera línea rompen con `syntax error, unexpected identifier "version"` en servidores con `short_open_tag` activado en PHP (PHP interpreta el `<?xml` como una etiqueta corta de PHP). Solución: partir la secuencia `<?` por concatenación dentro de un `{!! !!}`: `{!! '<' . '?xml version="1.0" encoding="UTF-8"?' . '>' !!}`.
 - **Gotcha de inputs `type="date"` en mobile Safari/WebKit (iOS)**: si un `<input type="date">` lleva un ícono decorativo propio con padding izquierdo (`pl-11` o similar), WebKit puede desbordar el control fuera de su contenedor porque su renderizado nativo no respeta bien el espacio reducido, incluso con `min-w-0` y a ancho completo. La solución confiable no es ajustar paddings sino sacar el ícono decorativo y dejar que el navegador muestre su propio ícono nativo de calendario.
+
+## Mantenimiento: actualizar un archivo puntual sin redeploy completo
+
+Es común que el working tree del servidor tenga cambios locales sin comitear (fixes aplicados directo por SSH que después se sincronizaron al repo local pero nunca se comitearon en el propio servidor — ver gotcha de Fase 3). Un `git pull` completo en ese estado puede fallar o pisar esos cambios. Para traer un solo archivo nuevo o actualizado desde `origin/main` sin tocar el resto del árbol:
+
+```bash
+cd ~/public_html   # o el document root real
+git fetch origin
+git show origin/main:ruta/al/archivo > ruta/al/archivo
+```
+
+Útil para restaurar un archivo borrado por error o para subir un archivo de verificación de terceros (ver siguiente sección) sin arriesgar un despliegue completo.
+
+## Verificaciones de terceros (Google Search Console, Bing Webmaster, etc.)
+
+Estas plataformas suelen pedir subir un archivo estático a la raíz pública del sitio para confirmar propiedad del dominio.
+
+- El contenido de estos archivos sigue un patrón fijo y no hace falta descargarlos: para Google, el archivo `google<token>.html` contiene una sola línea: `google-site-verification: google<token>.html`.
+- En despliegues Opción B (dominio apuntando a la raíz del repo), el archivo debe quedar en la carpeta real que sirve Laravel (`public/`), igual que `robots.txt` y `favicon.ico` — no en la raíz del repo, salvo que el `.htaccess` esté confirmado para no reescribir archivos que ya existen físicamente ahí.
+- Verificar siempre con `curl` que el archivo responde 200 con el contenido esperado antes de confirmar la verificación en la plataforma externa.
+- No borrar el archivo después de verificar: varias plataformas re-chequean su existencia periódicamente para mantener la verificación activa.
 
 ## Fase 8: Cierre
 
