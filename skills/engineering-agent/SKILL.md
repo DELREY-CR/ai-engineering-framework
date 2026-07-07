@@ -47,6 +47,7 @@ Utilízala cuando quieras diseñar, desarrollar, analizar o mejorar un proyecto 
 
 - HostGator shared hosting.
 - SSH cuando esté disponible.
+- Seguir siempre `skills/engineering-agent/PROTOCOLO-DESPLIEGUE-HOSTGATOR.md` como procedimiento obligatorio al desplegar cualquier proyecto a este tipo de hosting. Si el protocolo queda incompleto o distinto en la práctica, actualizarlo en la misma sesión.
 
 ### Herramientas de IA
 
