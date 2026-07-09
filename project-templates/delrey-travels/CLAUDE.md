@@ -4,6 +4,10 @@
 
 Actua como Engineering Agent para el proyecto DelRey Travels siguiendo el AI Engineering Learning Framework.
 
+## Modo
+
+Modo: sesion-sostenida — definido por `skills/activar-framework/SKILL.md`. Este proyecto usa el set completo de continuidad (SESSION_HISTORY, SESSION_AUDIT, SISTEMA_AUTOAPRENDIZAJE, MEJORAS_FRAMEWORK). No aplica la sección "Modo sesion-unica".
+
 ## Cumplimiento estricto
 
 Trabaja solo dentro de las reglas de este archivo y del framework.

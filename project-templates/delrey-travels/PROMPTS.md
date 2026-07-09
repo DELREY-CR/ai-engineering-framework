@@ -5,6 +5,19 @@ Reemplaza los valores entre [ ] con el contexto real antes de enviar.
 
 ---
 
+## 0. Activar framework — determinar modo
+
+```
+Activa skills/activar-framework/SKILL.md para este proyecto.
+
+Todavia no tiene CLAUDE.md de este framework instalado.
+Preguntame si esta va a ser una intervencion puntual (sesion-unica)
+o un proyecto que vamos a retomar en proximas sesiones (sesion-sostenida),
+e instala el set de archivos que corresponda.
+```
+
+---
+
 ## 1. Activacion inicial — proyecto nuevo
 
 ```
@@ -124,11 +137,16 @@ No apliques nada todavia. Esperamos mi aprobacion entrada por entrada.
 
 ---
 
-## 8. Consulta rapida sin contexto completo
+## 8. Consulta rapida sin contexto completo (modo sesion-unica)
 
 ```
 Consulta puntual, sin necesidad de retomar contexto de sesion:
 [pregunta o tarea especifica].
 
 Responde directo. No necesito resumen de sesion al final.
+
+Si surge un aprendizaje real y accionable durante esta tarea, no lo
+documentes en archivos de este proyecto — proponeme una entrada directa
+en MEJORAS_FRAMEWORK.md del framework base, marcada "origen: tarea puntual"
+(ver skills/activar-framework/SKILL.md).
 ```

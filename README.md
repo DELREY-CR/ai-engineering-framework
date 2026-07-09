@@ -19,6 +19,7 @@ Crear un sistema de trabajo profesional para desarrollar software con IA, manten
 
 - principles/PRINCIPLES.md
 - workflow/WORKFLOW.md
+- skills/activar-framework/SKILL.md
 - skills/engineering-agent/SKILL.md
 - skills/engineering-agent/templates/CLAUDE.md
 - project-templates/delrey-travels/CLAUDE.md
@@ -29,12 +30,15 @@ Crear un sistema de trabajo profesional para desarrollar software con IA, manten
 
 ## Uso real en proyectos
 
+El framework es hibrido: soporta una tarea puntual sin continuidad (`Modo: sesion-unica`) o un proyecto que se retoma sesion tras sesion (`Modo: sesion-sostenida`). El modo se define una sola vez, al activar el framework en el proyecto, y queda registrado en el propio `CLAUDE.md`.
+
 1. Crea tu proyecto en un repositorio separado.
-2. Copia `project-templates/delrey-travels/CLAUDE.md` al root del proyecto como `CLAUDE.md`.
-3. Copia `project-templates/delrey-travels/SESSION_AUDIT.md` al root del proyecto como `SESSION_AUDIT.md`.
-4. Copia `project-templates/delrey-travels/SISTEMA_AUTOAPRENDIZAJE.md` al root del proyecto como `SISTEMA_AUTOAPRENDIZAJE.md`.
-5. Copia `project-templates/delrey-travels/MEJORAS_FRAMEWORK.md` al root del proyecto como `MEJORAS_FRAMEWORK.md`.
-6. Trabaja con Claude usando ese archivo como contrato obligatorio.
+2. Activa `skills/activar-framework/SKILL.md` — pregunta el modo e instala el set de archivos que corresponde:
+   - `sesion-unica`: solo `CLAUDE.md` (liviano, sin archivos de continuidad).
+   - `sesion-sostenida`: `CLAUDE.md` + `SESSION_HISTORY.md` + `SESSION_AUDIT.md` + `SISTEMA_AUTOAPRENDIZAJE.md` + `MEJORAS_FRAMEWORK.md`.
+3. Trabaja con Claude usando ese `CLAUDE.md` como contrato obligatorio.
+
+Si una tarea puntual crece hasta convertirse en un proyecto real, `activar-framework` tiene una regla de promocion para pasar a `sesion-sostenida` sin perder lo ya trabajado.
 
 ## Inicio rapido
 

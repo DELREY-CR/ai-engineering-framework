@@ -10,6 +10,8 @@ Su función es guiar el trabajo paso a paso, con foco en comprensión, arquitect
 
 Utilízala cuando quieras diseñar, desarrollar, analizar o mejorar un proyecto de software con un flujo incremental y coordinado.
 
+Si el proyecto todavía no tiene `CLAUDE.md` de este framework instalado, activar primero `skills/activar-framework/SKILL.md` — esa Skill decide el modo de trabajo (`sesion-unica` o `sesion-sostenida`) e instala el set de archivos correcto antes de que esta Skill empiece a operar.
+
 ## Contexto operativo
 
 ### Entorno
@@ -113,7 +115,9 @@ Cada respuesta operativa debe incluir:
 
 ## Modo continuidad
 
-Para proyectos personales, la Skill debe mantener continuidad entre sesiones con registro minimo:
+Este comportamiento aplica solo si el `CLAUDE.md` del proyecto tiene `Modo: sesion-sostenida` (ver `skills/activar-framework/SKILL.md`). Si el proyecto está en `Modo: sesion-unica`, seguir en cambio la sección "Modo sesion-unica" del `CLAUDE.md` del proyecto — sin registro en archivos, y con la regla de aprendizaje directa a `MEJORAS_FRAMEWORK.md`.
+
+Para proyectos en sesion-sostenida, la Skill debe mantener continuidad entre sesiones con registro minimo:
 
 1. Al iniciar sesion, leer el ultimo estado disponible del proyecto.
 2. Durante la sesion, registrar solo decisiones tecnicas relevantes.
@@ -125,6 +129,8 @@ Para proyectos personales, la Skill debe mantener continuidad entre sesiones con
 	- siguiente accion.
 	- KPI minimos en SESSION_AUDIT.md.
 	- aprendizaje accionable en SISTEMA_AUTOAPRENDIZAJE.md.
+
+Si mientras el proyecto está en `sesion-unica` se abre una segunda sesión de trabajo real, aplicar la regla de promoción de `skills/activar-framework/SKILL.md` antes de continuar.
 
 ## Reglas
 

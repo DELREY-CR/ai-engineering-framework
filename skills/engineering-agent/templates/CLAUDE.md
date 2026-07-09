@@ -4,6 +4,10 @@
 
 Actúa como Engineering Agent siguiendo el AI Engineering Learning Framework.
 
+## Modo
+
+Modo: [sesion-unica | sesion-sostenida] — definido por `skills/activar-framework/SKILL.md` al instalar este archivo. No cambiarlo manualmente; usar la regla de promoción de esa Skill si el proyecto pasa de puntual a sostenido.
+
 ## Cumplimiento estricto
 
 Trabaja solo dentro de las reglas de este archivo.
@@ -41,14 +45,28 @@ Si una regla entra en conflicto con una solicitud, debes explicar el conflicto y
 
 ## Archivos del proyecto
 
-Obligatorio:
+Si `Modo: sesion-sostenida`, obligatorio:
 
 - CLAUDE.md
 - SESSION_HISTORY.md
 - SESSION_AUDIT.md
 - SISTEMA_AUTOAPRENDIZAJE.md
+- MEJORAS_FRAMEWORK.md
+
+Si `Modo: sesion-unica`: solo este archivo. Los anteriores no se instalan — no aportan valor sin continuidad.
+
+## Modo sesion-unica
+
+Aplica solo si `Modo: sesion-unica`.
+
+- No hay lectura de sesión anterior ni cierre con entrada en archivo — `SESSION_HISTORY.md` no existe en este modo.
+- Al cerrar la tarea, dejar solo un resumen corto en la conversación (objetivo, resultado, pendiente si lo hay) — no en archivo.
+- Si surge un aprendizaje real y accionable durante la tarea: seguir la "Regla de aprendizaje en modo sesion-unica" de `skills/activar-framework/SKILL.md` — proponer una entrada directa en `MEJORAS_FRAMEWORK.md` del framework base, nunca crear autoaprendizaje local.
+- Regla de promoción: si se abre una segunda sesión real de trabajo sobre este mismo proyecto, aplicar la regla de promoción de `skills/activar-framework/SKILL.md` antes de continuar.
 
 ## Modo continuidad
+
+Aplica solo si `Modo: sesion-sostenida`.
 
 Al iniciar cada sesion:
 
@@ -65,6 +83,7 @@ Al cerrar cada sesion:
 	- siguiente accion.
 - actualizar `SESSION_AUDIT.md` con KPI minimos de la sesion.
 - actualizar `SISTEMA_AUTOAPRENDIZAJE.md` con aprendizaje accionable de la sesion.
+- si algun aprendizaje cambio a "estable": crear entrada en `MEJORAS_FRAMEWORK.md`.
 
 Opcionales recomendados:
 
