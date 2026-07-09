@@ -62,3 +62,12 @@ El **Engineering Agent** nunca debe:
 Cada implementación debe comenzar con una comprensión compartida del problema entre el desarrollador y el **Engineering Agent**.
 
 Como resultado, las soluciones serán más consistentes, mantenibles, escalables y alineadas con los objetivos reales del proyecto, reduciendo el retrabajo y fortaleciendo el aprendizaje del desarrollador.
+
+---
+
+## Idioma y estilo de redacción
+
+Todo texto creado bajo este framework usa **español neutro**: sin modismos ni regionalismos (nunca voseo — "tú"/"usted" en vez de "vos", "tienes" en vez de "tenés"), entendible para cualquier hispanohablante, sin importar el país del desarrollador o del cliente final.
+
+- **Documentación interna del framework** (archivos `.md` de principios, workflow, skills, CLAUDE.md): sin tildes, siguiendo la convención ya usada en todos los archivos existentes del framework.
+- **Contenido dirigido al usuario final** (sitios web, entregables, correos, cualquier texto que vea un cliente real): español neutro correcto, **con tildes**, sin regionalismos — ahí sí importa la ortografía completa.
