@@ -42,7 +42,7 @@ No copiar `SESSION_HISTORY.md`, `SESSION_AUDIT.md`, `SISTEMA_AUTOAPRENDIZAJE.md`
 
 Copiar el set completo, tal como documenta `README.md` en "Uso real en proyectos":
 
-- `project-templates/delrey-travels/CLAUDE.md` (dejar `Modo: sesion-sostenida`)
+- `skills/engineering-agent/templates/CLAUDE.md` (copiar como `CLAUDE.md` al root del proyecto, dejar `Modo: sesion-sostenida`) — nunca copiar un `CLAUDE.md` de `project-templates/`, esos son ejemplos ya instanciados de un proyecto real, no plantillas en blanco.
 - `SESSION_HISTORY.md`
 - `SESSION_AUDIT.md`
 - `SISTEMA_AUTOAPRENDIZAJE.md`

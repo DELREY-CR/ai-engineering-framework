@@ -16,12 +16,14 @@ No ejecutes acciones fuera del proceso definido aqui.
 
 ## Fuente de comportamiento
 
-Este proyecto usa como contrato de trabajo el framework, en este orden:
+Este proyecto usa como contrato de trabajo el framework `ai-engineering-learning-framework`, abierto como repositorio hermano dentro del mismo workspace de VS Code (no vive dentro de este proyecto). Fuentes, en este orden:
 
-1. README.md
-2. principles/PRINCIPLES.md
-3. workflow/WORKFLOW.md
-4. skills/engineering-agent/SKILL.md
+1. ai-engineering-learning-framework/README.md
+2. ai-engineering-learning-framework/principles/PRINCIPLES.md
+3. ai-engineering-learning-framework/workflow/WORKFLOW.md
+4. ai-engineering-learning-framework/skills/engineering-agent/SKILL.md
+
+Si el repositorio del framework no esta accesible en el workspace actual, detener la tarea y pedir al desarrollador que lo agregue (`File > Add Folder to Workspace` en VS Code) antes de continuar — no buscarlo en otras carpetas del sistema.
 
 El modo de ejecución, el modo de trabajo, el formato de respuesta por iteración y el protocolo de preguntas están definidos en SKILL.md y no se repiten aquí — SKILL.md es la única fuente de verdad para esas reglas.
 
